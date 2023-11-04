@@ -107,9 +107,25 @@
         box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
     }
 
+    label{
+        position: relative;
+    }
+
+    img{
+        width: 30px;
+        border-radius: 50%;
+        position: absolute;
+        top: -3px;
+        right: 9px;
+        font-size: 26px;
+        color: #5b5b5d;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
     .form-input{
         padding: 15px 0 15px 19px;
-        margin-bottom: 16px;
+        margin-bottom: 6px;
         color: #3D3B48;
         font-size: 14px;
         font-weight: 600;
@@ -118,7 +134,41 @@
         border-radius: 5px;
         border: 1px solid #DEDEDE;
         background-color: #FFF; 
+        outline: none;
     }
+
+
+    .form-input:valid{
+        border: 2px solid  #5E54A4 ;
+    }
+
+    .form-input:not(:focus):not(:placeholder-shown):invalid{
+        border: 2px solid red;
+    }
+
+    .form-input:not(:focus):not(:placeholder-shown):invalid{
+        background-image: url("../images/invalid-logo.svg");
+        background-repeat: no-repeat;
+        background-position: calc(50% + 127px) center;
+    }
+
+    .form-input:not(:focus):not(:placeholder-shown):invalid + .form-input__text{
+        opacity: 1;
+    }
+
+    .form-input__text{
+        display: block;
+        margin-bottom: 14px;
+        text-align: right;
+        color: #FF7979;
+        text-align: right;
+        font-size: 13px;
+        font-style: italic;
+        font-weight: 500;
+        opacity: 0;
+    }
+
+
 
     .form-btn{
         width: 90%;
@@ -168,8 +218,6 @@
         padding-right: 100px;
     }
 
-
-
     .form-box{
         text-align: center;
     }
@@ -195,9 +243,28 @@
         background-color: #fff;
     }
 
+    label{
+        position: relative;
+        margin-bottom: 14px;
+    }
+
+    img{
+        width: 30px;
+        border-radius: 50%;
+        position: absolute;
+        top: 13px;
+        right: 5px;
+        font-size: 26px;
+        color: #5b5b5d;
+        cursor: pointer;
+        background-color: #fff;
+    }
+
+
+
     .form-input{
         padding: 15px  0 15px 32px;
-        margin-bottom: 20px;
+        margin-bottom: 6px;
         color: #3D3B48;
         font-size: 14px;
         font-weight: 600;
@@ -206,7 +273,39 @@
         border-radius: 5px;
         border: 1px solid #5E54A4;
         background-color: #FFF; 
+        outline: none;
     }
+
+    .form-input:valid{
+        border: 2px solid  #5E54A4 ;
+    }
+
+    .form-input:not(:focus):not(:placeholder-shown):invalid{
+        border: 2px solid red;
+    }
+
+    .form-input:not(:focus):not(:placeholder-shown):invalid{
+        background-image: url("../images/invalid-logo.svg");
+        background-repeat: no-repeat;
+        background-position: calc(50% + 130px) center;
+    }
+
+    .form-input:not(:focus):not(:placeholder-shown):invalid + .form-input__text{
+        opacity: 1;
+    }
+
+    .form-input__text{
+        display: block;
+        text-align: right;
+        color: #FF7979;
+        text-align: right;
+        font-size: 13px;
+        font-style: italic;
+        font-weight: 500;
+        opacity: 0;
+    }
+
+
 
     .form-btn{
         padding: 15px 35px;
@@ -221,6 +320,7 @@
         background: #38CC8B;
         box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.09) inset;
         color: #fff;
+        cursor: pointer;
     }
 
     .form-bottom-title{

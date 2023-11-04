@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&family=Poppins:wght@500;600;700&family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&family=Poppins:wght@500;600;700&family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
 </head>
 <body>
 
@@ -20,10 +21,23 @@
             <div class="form-box">
                 <button class="form-box__btn">Try it free 7 days then $20/mo. thereafter</button>
                 <form class="form">
-                <input class="form-input" type="text" placeholder="First Name">
-                <input class="form-input" type="text" placeholder="Last Name">
-                <input class="form-input" type="email" placeholder="Email Address">
-                <input class="form-input" type="text" placeholder="Password">
+                  <label>
+                    <input class="form-input" type="text" placeholder="First Name" minlength="6" required>
+                    <span class="form-input__text">First Name cannot be empty</span>
+                </label>
+                  <label>
+                    <input class="form-input" type="text" placeholder="Last Name" minlength="6" required>
+                    <span class="form-input__text">Last Name cannot be empty</span>  
+                </label>
+                  <label>
+                    <input class="form-input" type="email" placeholder="Email Address" required>
+                    <span class="form-input__text">Looks like this is not an email</span>  
+                </label>
+                  <label>
+                    <input class="form-input form-input__password" type="password" placeholder="Password"  required>
+                    <span class="form-input__text">Password cannot be empty</span> 
+                    <img class="form-password__img" src="./images/hidden-eye.png" alt="eye img">
+                </label>
                 <button class="form-btn">CLAIM YOUR FREE TRIAL</button>
                 <h5 class="form-bottom-title">By clicking the button, you are agreeing to our <span>Terms and Services</span></h5>
                 </form>
@@ -31,6 +45,6 @@
             </div>
       </div>
    </section>
-    
+    <script src="index.js"></script>
 </body>
 </html>
